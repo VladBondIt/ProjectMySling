@@ -3,10 +3,16 @@
 @import "fonts/fonts.scss";
 @import "nullstyle/nullstyle.scss";
 
-@import "test/test.scss";
+@import "header/header.scss";
+@import "links-effect/link.scss";
+@import "buttons-effect/button.scss";
+@import "animation/animation.scss";
 
 body {
-    background-color: black;
-    font-size: 21px;
-    color: white;
+    font-family: Roboto;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
 }

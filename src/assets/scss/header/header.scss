@@ -1,0 +1,193 @@
+.header__logo-svg {
+    width: 50px;
+    height: 50px;
+}
+
+.header {
+    color: #ffffff;
+    &__background {
+        background-image: url(../images/header-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 8px 0;
+        margin-bottom: 90px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        &-svg {
+            width: 65px;
+            height: 65px;
+        }
+        &-box {
+            font-family: Lobster;
+            text-align: center;
+        }
+        &-title {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &-subtitle {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    &__burger {
+        display: none;
+    }
+
+    &__menu {
+        flex: 0 0 30%;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+        &-item {
+        }
+    }
+
+    &__link {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 23px;
+        line-height: 27px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    &__phone {
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    &__email {
+        color: #ffffff;
+    }
+
+    &__cart {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ffffff;
+        border-radius: 30px;
+        justify-content: space-between;
+        cursor: pointer;
+        &-svg {
+            fill: #b2e5fb;
+            width: 57px;
+            height: 57px;
+            padding: 10px;
+        }
+        &-delimetr {
+            width: 1px;
+            background-color: #fff;
+            height: 57px;
+        }
+        &-box {
+            padding: 10px;
+            font-size: 18px;
+            line-height: 21px;
+            display: flex;
+            flex-direction: column;
+        }
+        &-count {
+        }
+        &-price {
+        }
+    }
+
+    &__content {
+        padding-bottom: 20px;
+        &-text {
+            display: flex;
+            justify-content: space-between;
+            font-size: 64px;
+            line-height: 60px;
+            font-family: Lobster;
+            margin-bottom: 70px;
+            &-left {
+                flex: 0 0 250px;
+            }
+            &-right {
+                flex: 0 0 250px;
+                text-align: right;
+            }
+        }
+        &-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            &-social {
+                border-top: 1px solid rgb(255, 255, 255);
+                flex: 0 1 250px;
+            }
+            &-button {
+                flex: 0 1 250px;
+            }
+        }
+    }
+}
+.social {
+    &__list {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+    }
+
+    &__link {
+    }
+
+    &__svg {
+        width: 50px;
+        height: 50px;
+        &:hover {
+            animation-name: header-social;
+            animation-duration: 0.1s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+        &-vk {
+            fill: #2787f5;
+        }
+        &-insta {
+        }
+        &-facebook {
+        }
+    }
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(to right, #2be328, #b9c543, #fdb750);
+    padding: 8px 0;
+    border-radius: 33px;
+    font-family: Lobster;
+    font-size: 30px;
+    background-size: 170%;
+    transition: background 1s linear;
+    &:hover {
+        background-position: right;
+    }
+}

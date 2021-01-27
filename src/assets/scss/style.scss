@@ -6,9 +6,11 @@
 @import "libs/buttons-effect/button.scss";
 @import "libs/animation/animation.scss";
 @import "libs/variables/variables.scss";
+@import "libs/shadow/box-shadow.scss";
 
 @import "components/header/header.scss";
 @import "components/shop/shop.scss";
+@import "components/footer/footer.scss";
 
 body {
     font-family: Roboto;

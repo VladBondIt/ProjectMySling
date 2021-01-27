@@ -23,6 +23,7 @@
     &__logo {
         display: flex;
         align-items: center;
+        cursor: pointer;
         &-svg {
             width: 65px;
             height: 65px;
@@ -88,6 +89,10 @@
         border-radius: 30px;
         justify-content: space-between;
         cursor: pointer;
+        transition: box-shadow 0.5s;
+        &:hover {
+            box-shadow: 0 0 15px rgb(255, 255, 255);
+        }
         &-svg {
             fill: #b2e5fb;
             width: 57px;
@@ -101,12 +106,12 @@
         }
         &-box {
             padding: 10px;
-            font-size: 18px;
-            line-height: 21px;
+            font-size: 16px;
             display: flex;
             flex-direction: column;
         }
         &-count {
+            margin-bottom: 5px;
         }
         &-price {
         }

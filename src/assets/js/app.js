@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
         })
     })
-    // testWebP();
+    testWebP();
 
 
 });

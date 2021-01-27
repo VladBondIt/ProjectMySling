@@ -4,7 +4,6 @@
     background-repeat: repeat;
     padding-top: 50px;
     &__search {
-        background: #ffffff;
         border-radius: 50px;
         font-size: 20px;
         display: flex;
@@ -13,6 +12,10 @@
         padding: 15px 15px;
         margin-bottom: 40px;
         &-count {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
         }
         &-box {
             flex: 0 1 50%;
@@ -46,6 +49,14 @@
     }
 
     &__sort {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        &_type {
+            text-decoration: underline dotted white 2px;
+        }
     }
 
     &__content {
@@ -62,6 +73,8 @@
         border-radius: 10px;
         padding: 20px 14px;
         font-size: 20px;
+        position: sticky;
+        top: 5%;
         &-title {
             display: block;
             color: black;

@@ -2,9 +2,7 @@
     background: #000000;
     padding: 50px 0;
     color: white;
-    & a {
-        color: white;
-    }
+
     &__nav {
         padding: 0 8px;
     }
@@ -27,14 +25,9 @@
     &__logo {
         display: flex;
         align-items: center;
-        font-family: Lobster;
         font-size: 48px;
         line-height: 60px;
         margin-bottom: 73px;
-        &_svg {
-            width: 70px;
-            height: 70px;
-        }
     }
 
     &__copyright {
@@ -43,66 +36,57 @@
     }
 
     &__list {
-        &_item {
-            font-size: 18px;
-            line-height: 21px;
-            &:not(:last-child) {
-                margin-bottom: 24px;
-            }
-            &:first-child {
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 28px;
-            }
-        }
+    }
 
-        &_link {
+    &__item {
+        font-size: 18px;
+        line-height: 21px;
+        &:not(:last-child) {
+            margin-bottom: 24px;
         }
+        &:first-child {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    &__link {
+        color: white;
     }
 
     &__contacts {
-        &_item {
-            font-size: 18px;
-            line-height: 21px;
-            margin-bottom: 24px;
-            &:first-child {
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 28px;
-            }
-        }
-
-        &_link {
-        }
     }
 
     &__social {
-        border-top: 1px solid white;
-        &_box {
-            margin-top: 15px;
-            display: flex;
-            justify-content: space-between;
-        }
-        &_link {
-        }
+    }
+}
+.footer-social {
+    border-top: 1px solid white;
+    &__box {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
 
+    &__link {
+    }
+
+    &__svg {
+        fill: white;
         &_vk {
-            fill: white;
             &:hover {
                 fill: #2787f5;
             }
         }
 
         &_fb {
-            fill: white;
-
             &:hover {
                 fill: #475993;
             }
         }
 
         &_insta {
-            fill: white;
             &:hover {
                 fill: #e1306c;
             }
